@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Евгений Калинин](https://up.htmlacademy.ru/adaptive/27/user/1977371).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim).
 
 ---
 
