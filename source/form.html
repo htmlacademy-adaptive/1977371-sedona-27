@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class="body body--form">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="./img/logo.jpg" alt="логотип сайта Седона" width="185" height="96">
+    </a>
+    <nav class="main-header__nav main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Форма Отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container main-container--form">
+    <h1 class="visually-hidden">Главная картинка Седоны</h1>
+    <div class="hero hero--form">
+      <div class="hero__wrapper hero__wrapper--form">
+        <img class="hero__wrapper-image hero__wrapper-image--form" src="./img/sedona.jpg" alt="главная картинка седоны"
+          width="901" height="389">
+      </div>
+    </div>
+    <div class="catalog-intro catalog-intro--form">
+      <h1 class="catalog-intro__title catalog-intro__title--form">оставьте свой отзыв</h1>
+      <p class="catalog-intro__text catalog-intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,
+        а также о посещенных вами достопримечательностях</p>
+    </div>
+    <section class="form">
+      <div class="form__wrapper">
+
+        <div class="yourself">
+          <fieldset>
+            <legend class="yourself__title">представьтесь:</legend>
+            <ul class="yourself__list">
+              <li class="yourself__item">
+                <p class="yourself__text">Имя<sup>*</sup>:</p>
+                <input type="text" placeholder="Петр" required>
+              </li>
+              <li class="yourself__item">
+                <p class="yourself__text">Фамилия<sup>*</sup>:</p>
+                <input type="text" placeholder="Пустота" required>
+              </li>
+              <li class="yourself__item">
+                <p class="yourself__text">Отчество<sup>*</sup>:</p>
+                <input type="text" placeholder="Викторович" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="personal-data">
+          <fieldset>
+            <legend class="personal-data">личные данные</legend>
+            <ul class="personal-data__list">
+              <li class="personal-data__item">
+                <p class="personal-data__text">Контактный телефон<sup>*</sup>:</p>
+                <input type="text" placeholder="Введите телефон" required>
+              </li>
+              <li class="yourself__item">
+                <p class="yourself__text">Электронная почта<sup>*</sup>:</p>
+                <input type="text" placeholder="Введите e-mail" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+</body>
+
+</html>
