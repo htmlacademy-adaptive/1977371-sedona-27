@@ -91,13 +91,108 @@
           </fieldset>
         </div>
 
+        <div class="impression-form">
+          <fieldset>
+            <legend class="impression-form">ваше общее впечатление:</legend>
+            <ul class="impression-form__list">
+              <li class="impression-form__item">
+                <label>
+                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive"
+                    checked>
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="impression-form__item">
+                <label>
+                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="impression-form__item">
+                <label>
+                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="visited-attractions">
+          <fieldset>
+            <legend class="visited-attractions">ваше общее впечатление:</legend>
+            <ul class="visited-attractions__list">
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="bridge" name="bridge" checked>
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="mountain" name="mountain" checked>
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="park" name="park" checked>
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="rocks" name="rocks" checked>
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
       </div>
-
     </section>
-
-
+    <div class="emotions">
+      <h2 class="emotions__title">Опишите свои эмоции:</h2>
+      <textarea class="emotions__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="emotions__button button">отправить отзыв
+      </button>
+      <span>* — обязательные поля</span>
+    </div>
   </main>
 
+  <footer class="main-footer">
+    <div class="main-footer__social social">
+      <div class="social__title">
+        <b>#visitSEDONA</b>
+      </div>
+      <div class="social__list">
+        <ul>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="developed">
+        <p class="developed__text">Разработано</p>
+        <svg viewBox="27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
+            fill="#000" />
+        </svg>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
