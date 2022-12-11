@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <base href="https://htmlacademy-adaptive.github.io/1977371-sedona-27/7/">
+</head>
+
+<body class="body body--form">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="./img/logo.jpg" alt="логотип сайта Седона" width="185" height="96">
+    </a>
+    <nav class="main-header__nav main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            Форма Отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container main-container--form">
+    <h1 class="visually-hidden">Главная картинка Седоны</h1>
+    <div class="hero hero--form">
+      <div class="hero__wrapper hero__wrapper--form">
+        <img class="hero__wrapper-image hero__wrapper-image--form" src="./img/sedona.jpg" alt="главная картинка седоны"
+          width="901" height="389">
+      </div>
+    </div>
+    <div class="catalog-intro catalog-intro--form">
+      <h1 class="catalog-intro__title catalog-intro__title--form">оставьте свой отзыв</h1>
+      <p class="catalog-intro__text catalog-intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,
+        а также о посещенных вами достопримечательностях</p>
+    </div>
+    <section class="form">
+      <div class="form__wrapper">
+
+        <div class="yourself">
+          <fieldset>
+            <legend class="yourself__title">представьтесь:</legend>
+            <ul class="yourself__list">
+              <li class="yourself__item">
+                <p class="yourself__text">Имя<sup>*</sup>:</p>
+                <input type="text" placeholder="Петр" required>
+              </li>
+              <li class="yourself__item">
+                <p class="yourself__text">Фамилия<sup>*</sup>:</p>
+                <input type="text" placeholder="Пустота" required>
+              </li>
+              <li class="yourself__item">
+                <p class="yourself__text">Отчество<sup>*</sup>:</p>
+                <input type="text" placeholder="Викторович" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="personal-data">
+          <fieldset>
+            <legend class="personal-data">личные данные</legend>
+            <ul class="personal-data__list">
+              <li class="personal-data__item">
+                <p class="personal-data__text">Контактный телефон<sup>*</sup>:</p>
+                <input type="text" placeholder="Введите телефон" required>
+              </li>
+              <li class="yourself__item">
+                <p class="yourself__text">Электронная почта<sup>*</sup>:</p>
+                <input type="text" placeholder="Введите e-mail" required>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="impression-form">
+          <fieldset>
+            <legend class="impression-form">ваше общее впечатление:</legend>
+            <ul class="impression-form__list">
+              <li class="impression-form__item">
+                <label>
+                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive"
+                    checked>
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="impression-form__item">
+                <label>
+                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="impression-form__item">
+                <label>
+                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+
+        <div class="visited-attractions">
+          <fieldset>
+            <legend class="visited-attractions">ваше общее впечатление:</legend>
+            <ul class="visited-attractions__list">
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="bridge" name="bridge" checked>
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="mountain" name="mountain" checked>
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="park" name="park" checked>
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="visited-attractions__item">
+                <label>
+                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                    id="rocks" name="rocks" checked>
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <div class="emotions">
+      <h2 class="emotions__title">Опишите свои эмоции:</h2>
+      <textarea class="emotions__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+      <button class="emotions__button button">отправить отзыв
+      </button>
+      <span>* — обязательные поля</span>
+    </div>
+  </main>
+{# добавить импорт в другой файл #}
+
+  <footer class="main-footer">
+    <div class="main-footer__social social">
+      <div class="social__title">
+        <b>#visitSEDONA</b>
+      </div>
+      <div class="social__list">
+        <ul>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="developed">
+        <p class="developed__text">Разработано</p>
+        <svg viewBox="27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
+            fill="#000" />
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
