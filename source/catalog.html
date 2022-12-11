@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+</head>
+
+<body class="body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="./img/logo.jpg" alt="логотип сайта Седона" width="185" height="96">
+    </a>
+    <nav class="main-header__nav main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item" current>
+          <a>
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма Отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden">Главная картинка Седоны</h1>
+
+    <div class="hero">
+      <div class="hero__wrapper">
+        <img class="hero__wrapper-image" src="./img/sedona.jpg" alt="главная картинка седоны" width="902" height="214">
+      </div>
+    </div>
+    <div class="catalog-intro catalog-intro--catalog">
+      <h1 class="catalog-intro__title catalog-intro__title--catalog">фото и видео</h1>
+      <p class="catalog-intro__text catalog-intro__text--catalog">Не можете решиться на путешествие из-за курса?
+        Фотографии помогут вам
+        забыть о политике и экономике.</p>
+    </div>
+
+    <section class="catalog">
+      <div class="catalog__wrapper">
+
+        <ul class="catalog__list">
+
+          <li class="catalog__item">
+            <div>
+              <div class="catalog__item-photo">
+                <img src="./img/catalog/photo-1-mobile@1x.jpg" alt="неродные просторы" width="280" height="280">
+              </div>
+              <h2 class="catalog__item-title">неродные просторы</h2>
+              <p class="catalog__item-autor">Автор фото: Борис</p>
+              <a href="#">
+                <svg viewBox="23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"
+                    fill="#000" />
+                </svg>
+                <b class="catalog__item-like">1350</b>
+              </a>
+            </div>
+          </li>
+
+          <li class="catalog__item">
+            <div>
+              <div class="catalog__item-photo">
+                <img src="./img/catalog/photo-2-mobile@1x.jpg" alt="местная растительность" width="280" height="280">
+              </div>
+              <h2 class="catalog__item-title">местная растительность</h2>
+              <p class="catalog__item-autor">Автор фото: Сергей</p>
+              <a href="#">
+                <svg viewBox="23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"
+                    fill="#000" />
+                </svg>
+                <b class="catalog__item-like">143</b>
+              </a>
+            </div>
+          </li>
+
+          <li class="catalog__item">
+            <div>
+              <div class="catalog__item-photo">
+                <img src="./img/catalog/photo-3-mobile@1x.jpg" alt="дорога на север" width="280" height="280">
+              </div>
+              <h2 class="catalog__item-title">дорога на север</h2>
+              <p class="catalog__item-autor">Автор фото: Петр</p>
+              <a href="#">
+                <svg viewBox="23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"
+                    fill="#000" />
+                </svg>
+                <b class="catalog__item-like">96</b>
+              </a>
+            </div>
+          </li>
+
+          <li class="catalog__item">
+            <div>
+              <div class="catalog__item-photo">
+                <img src="./img/catalog/photo-4-mobile@1x.jpg" alt="мост дьявола" width="280" height="280">
+              </div>
+              <h2 class="catalog__item-title">мост дьявола</h2>
+              <p class="catalog__item-autor">Автор фото: Антон</p>
+              <a href="#">
+                <svg viewBox="23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="M12.96 3.78l-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62zM2.1 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 00-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0zM4.18 8.4H0V21h4.18V8.4z"
+                    fill="#000" />
+                </svg>
+                <b class="catalog__item-like">254</b>
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="information">
+      <h3 class="information__title">все ещё сомнеаетесь?</h3>
+      <p class="information__text">смотрите видеопрезентацию и скорее за билетами, пока они
+        не подорожали в очередной раз!
+      </p>
+      <img src="./img/catalog/video-mobile@1x.jpg" alt="видеопрезентация" class="information" width="280" height="177">
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__social social">
+      <div class="social__title">
+        <b>#visitSEDONA</b>
+      </div>
+      <div class="social__list">
+        <ul>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="developed">
+        <p class="developed__text">Разработано</p>
+        <svg viewBox="27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
+            fill="#000" />
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
