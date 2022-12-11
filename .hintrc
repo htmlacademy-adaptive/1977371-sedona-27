@@ -4,23 +4,11 @@
     "development"
   ],
   "hints": {
-<<<<<<< HEAD
     "axe/name-role-value": [
       "default",
       {
         "link-name": "off"
-      }
-    ]
-=======
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off"
->>>>>>> 3f0d425 (исправил все ошибки в разметке)
       }
     ]
   }
 }
-=======
->>>>>>> dddcaa6 (исправил все ошибки)
-
