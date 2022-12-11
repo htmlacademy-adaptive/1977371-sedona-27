@@ -3,6 +3,11 @@
     "development"
   ],
   "hints": {
-    "meta-viewport": "off"
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
   }
 }
