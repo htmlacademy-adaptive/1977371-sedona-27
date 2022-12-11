@@ -8,10 +8,14 @@
     "browser-sync": "2.27.7",
     "gulp": "4.0.2",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "gulp-dart-sass": "^1.0.2",
 =======
     "gulp-less": "5.0.0",
 >>>>>>> 96c1f7f (:cat:)
+=======
+    "gulp-dart-sass": "^1.0.2",
+>>>>>>> d3b2b27 (:cat:)
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
@@ -21,10 +25,14 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
 =======
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
 >>>>>>> 96c1f7f (:cat:)
+=======
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+>>>>>>> d3b2b27 (:cat:)
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
@@ -43,10 +51,14 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "source/sass/**/*.scss"
 =======
     "source/less/**/*.less"
 >>>>>>> 96c1f7f (:cat:)
+=======
+    "source/sass/**/*.scss"
+>>>>>>> d3b2b27 (:cat:)
   ],
   "engines": {
     "node": "^16"
