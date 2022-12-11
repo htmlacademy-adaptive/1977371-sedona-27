@@ -4,11 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
-<body class="body body--form">
+<body class="body">
   <header class="main-header">
     <a class="main-header__logo">
       <img src="./img/logo.jpg" alt="логотип сайта Седона" width="185" height="96">
@@ -26,8 +25,8 @@
             Фото и видео
           </a>
         </li>
-        <li class="site-list__item">
-          <a href="#">
+        <li class="site-list__item" current>
+          <a>
             Форма Отзыва
           </a>
         </li>
@@ -39,131 +38,125 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container main-container--form">
-    <h1 class="visually-hidden">Главная картинка Седоны</h1>
-    <div class="hero hero--form">
-      <div class="hero__wrapper hero__wrapper--form">
-        <img class="hero__wrapper-image hero__wrapper-image--form" src="./img/sedona.jpg" alt="главная картинка седоны"
-          width="901" height="389">
+
+  <main class="main-container">
+    <div class="hero">
+      <div class="hero__wrapper">
+        <img class="hero__wrapper-image" src="./img/sedona.jpg" alt="главная картинка седоны" width="901" height="389">
       </div>
     </div>
-    <div class="catalog-intro catalog-intro--form">
-      <h1 class="catalog-intro__title catalog-intro__title--form">оставьте свой отзыв</h1>
-      <p class="catalog-intro__text catalog-intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,
+    <div class="catalog-intro">
+      <h1 class="catalog-intro__title">оставьте свой отзыв</h1>
+      <p class="catalog-intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них,
         а также о посещенных вами достопримечательностях</p>
     </div>
     <section class="form">
-      <div class="form__wrapper">
+      <form class="form__wrapper">
 
-        <div class="yourself">
-          <fieldset>
-            <legend class="yourself__title">представьтесь:</legend>
-            <ul class="yourself__list">
-              <li class="yourself__item">
-                <p class="yourself__text">Имя<sup>*</sup>:</p>
-                <input type="text" placeholder="Петр" required>
-              </li>
-              <li class="yourself__item">
-                <p class="yourself__text">Фамилия<sup>*</sup>:</p>
-                <input type="text" placeholder="Пустота" required>
-              </li>
-              <li class="yourself__item">
-                <p class="yourself__text">Отчество<sup>*</sup>:</p>
-                <input type="text" placeholder="Викторович" required>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+        <fieldset>
+          <legend>представьтесь:</legend>
+          <ul class="yourself">
+            <li class="yourself__item">
+              <p class="yourself__text">Имя<sup>*</sup>:</p>
+              <input type="text" placeholder="Петр" required>
+            </li>
+            <li class="yourself__item">
+              <p class="yourself__text">Фамилия<sup>*</sup>:</p>
+              <input type="text" placeholder="Пустота" required>
+            </li>
+            <li class="yourself__item">
+              <p class="yourself__text">Отчество<sup>*</sup>:</p>
+              <input type="text" placeholder="Викторович" required>
+            </li>
+          </ul>
+        </fieldset>
 
-        <div class="personal-data">
-          <fieldset>
-            <legend class="personal-data">личные данные</legend>
-            <ul class="personal-data__list">
-              <li class="personal-data__item">
-                <p class="personal-data__text">Контактный телефон<sup>*</sup>:</p>
-                <input type="text" placeholder="Введите телефон" required>
-              </li>
-              <li class="yourself__item">
-                <p class="yourself__text">Электронная почта<sup>*</sup>:</p>
-                <input type="text" placeholder="Введите e-mail" required>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+        <fieldset>
+          <legend>личные данные</legend>
+          <ul class="personal-data">
+            <li class="personal-data__item">
+              <p class="personal-data__text">Контактный телефон<sup>*</sup>:</p>
+              <input type="text" placeholder="Введите телефон" required>
+            </li>
+            <li class="personal-data__item">
+              <p class="personal-data__text">Электронная почта<sup>*</sup>:</p>
+              <input type="text" placeholder="Введите e-mail" required>
+            </li>
+          </ul>
+        </fieldset>
 
-        <div class="impression-form">
-          <fieldset>
-            <legend class="impression-form">ваше общее впечатление:</legend>
-            <ul class="impression-form__list">
-              <li class="impression-form__item">
-                <label>
-                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive"
-                    checked>
-                  Скорее положительное
-                </label>
-              </li>
-              <li class="impression-form__item">
-                <label>
-                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
-                  Скорее отрицательное
-                </label>
-              </li>
-              <li class="impression-form__item">
-                <label>
-                  <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
-                  Затрудняюсь ответить
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+        <fieldset>
+          <legend>ваше общее впечатление:</legend>
+          <ul class="impression-form">
+            <li class="impression-form__item">
+              <label>
+                <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive" checked>
+                <span>Скорее положительное</span>
+              </label>
+            </li>
+            <li class="impression-form__item">
+              <label>
+                <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
+                <span>Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="impression-form__item">
+              <label>
+                <input name="impression-form-radio" class="impression-form-radio" type="radio" value="positive">
+                <span>Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-        <div class="visited-attractions">
-          <fieldset>
-            <legend class="visited-attractions">ваше общее впечатление:</legend>
-            <ul class="visited-attractions__list">
-              <li class="visited-attractions__item">
-                <label>
-                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
-                    id="bridge" name="bridge" checked>
-                  Мост Дьявола
-                </label>
-              </li>
-              <li class="visited-attractions__item">
-                <label>
-                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
-                    id="mountain" name="mountain" checked>
-                  Гора-Колокол
-                </label>
-              </li>
-              <li class="visited-attractions__item">
-                <label>
-                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
-                    id="park" name="park" checked>
-                  Слайд-парк
-                </label>
-              </li>
-              <li class="visited-attractions__item">
-                <label>
-                  <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
-                    id="rocks" name="rocks" checked>
-                  Красные скалы
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-      </div>
+        <fieldset>
+          <legend>ваше общее впечатление:</legend>
+          <ul class="visited-attractions">
+            <li class="visited-attractions__item">
+              <label>
+                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                  id="bridge" name="bridge" checked>
+                <span>Мост Дьявола</span>
+              </label>
+            </li>
+            <li class="visited-attractions__item">
+              <label>
+                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                  id="mountain" name="mountain" checked>
+                <span>Гора-Колокол</span>
+              </label>
+            </li>
+            <li class="visited-attractions__item">
+              <label>
+                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                  id="park" name="park" checked>
+                <span>Слайд-парк</span>
+              </label>
+            </li>
+            <li class="visited-attractions__item">
+              <label>
+                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox"
+                  id="rocks" name="rocks" checked>
+                <span>Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <h2>Опишите свои эмоции:</h2>
+          <textarea name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+
+      </form>
     </section>
+
     <div class="emotions">
-      <h2 class="emotions__title">Опишите свои эмоции:</h2>
-      <textarea class="emotions__text" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
       <button class="emotions__button button">отправить отзыв
       </button>
       <span>* — обязательные поля</span>
     </div>
   </main>
-{# добавить импорт в другой файл #}
 
   <footer class="main-footer">
     <div class="main-footer__social social">
