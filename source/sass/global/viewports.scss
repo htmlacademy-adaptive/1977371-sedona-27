@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $mobile-width-only: 767px;
+=======
+@custom-media --mobile (max-width: 767.9px);
+@custom-media --not-mobile (min-width: 768px);
+@custom-media --tablet (min-width: 768px) and (max-width: 1199.9px);
+@custom-media --desktop (min-width: 1200px);
+@custom-media --not-desktop (max-width: 1199.9px);
+>>>>>>> 624f7bf (module3-task1)
