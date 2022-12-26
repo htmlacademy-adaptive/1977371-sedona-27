@@ -9,6 +9,10 @@
   margin: 24px auto;
   color: #000000;
   background-color:#EEEEEE;
+
+  @media (min-width: @tablet-width) {
+    color: #65747d;
+  }
 }
 
 .advantages__item:nth-child(4) {

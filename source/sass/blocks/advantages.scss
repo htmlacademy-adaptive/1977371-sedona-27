@@ -4,4 +4,9 @@
   grid-template-columns: 1fr;
   background-color: #EEEEEE;
 
+
+@media (max-width: $tablet-width) {
+  background-color: #e41b1b;
+  color: #e41b1b;
+}
 }
