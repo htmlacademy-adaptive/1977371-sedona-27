@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+
+@import "./blocks/visually-hidden.scss";
+@import "./global/viewports.scss";
+@import "./global/fonts.scss";
+@import "./blocks/body.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/hero__image-block.scss";
+@import "./blocks/hero__image.scss";
+// index
+@import "./blocks/main-header.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/catalog-intro__title.scss";
+@import "./blocks/catalog-intro__text.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages__item.scss";
+@import "./blocks/advantages__item-block.scss";
+@import "./blocks/advantages__item-title.scss";
+@import "./blocks/advateges__item-number.scss";
+@import "./blocks/advantages__item-text.scss";
+@import "./blocks/advantages__item-photo.scss";
+@import "./blocks/service.scss";
+@import "./blocks/service__item.scss";
+@import "./blocks/service__list.scss";
+@import "./blocks/service__title.scss";
+@import "./blocks/service__text.scss";
+@import "./blocks/service__image.scss";
+@import "./blocks/service__block.scss";
+@import "./blocks/information.scss";
+@import "./blocks/information__block.scss";
+@import "./blocks/information__text.scss";
+@import "./blocks/information__title.scss";
+@import "./blocks/information__button.scss";
