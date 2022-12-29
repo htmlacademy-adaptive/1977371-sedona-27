@@ -3,4 +3,11 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: hsl(0, 0%, 93%);
+
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+  }
 }
