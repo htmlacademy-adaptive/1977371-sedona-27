@@ -1,0 +1,47 @@
+.header__burger {
+  @media (min-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    position: relative;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.header__burger span {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    height: 4px;
+    width: 22px;
+    top: 10px;
+  }
+}
+
+.header__burger::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    left: 0;
+    top: 0;
+  }
+}
+
+.header__burger::after {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    background-color: #ffffff;
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+  }
+}
