@@ -1,6 +1,18 @@
 .catalog-intro {
   box-sizing: border-box;
-  max-width: 500px;
+  max-width: 300px;
   padding: 32px 18px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 520px;
+    margin: 47.5px auto 55.5px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 484px;
+    margin: 59px auto 44px;
+    padding: 0;
+  }
 }

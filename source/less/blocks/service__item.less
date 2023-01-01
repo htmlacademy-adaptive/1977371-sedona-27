@@ -3,6 +3,11 @@
   padding: 0;
   display: flex;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 .service__item:last-child {

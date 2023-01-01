@@ -1,5 +1,15 @@
 .service__list {
-  padding: 0;
+  margin: 0;
   list-style-type: none;
-  margin: 23px 18px 46px;
+  padding: 23px 18px 46px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,13 +1,14 @@
 .advantages {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
   background-color: hsl(0, 0%, 93%);
 
-
   @media (min-width: @tablet-width) {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    list-style-type: none;
+    width: 100%;
   }
 }
