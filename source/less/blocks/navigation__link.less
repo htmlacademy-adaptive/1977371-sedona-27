@@ -1,0 +1,51 @@
+.navigation__link {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    padding: 17px 20px 12px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #81b3d2;
+    box-sizing: border-box;
+    min-height: 56px;
+    box-shadow: inset 0 1px 0 rgb(1 1 1 / 20%), inset 0 2px 0 rgb(255 255 255 / 20%);
+  }
+
+  @media (min-width: @tablet-width) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 20px 17px;
+    width: 20%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    padding: 18px 20px 17px;
+
+  }
+}
+
+.navigation__link:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    margin-right: 153px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 240px;
+  }
+
+}
+
+
+.navigation__link:first-child {
+  @media (max-width: @mobile-width-only) {
+    box-shadow: none;
+  }
+}

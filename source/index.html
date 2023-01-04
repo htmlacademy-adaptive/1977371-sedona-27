@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
   <meta charset="UTF-8">
@@ -14,40 +14,21 @@
 <body class="body">
 
   <header class="header">
-    <div class="header__container">
-      <div class="header__body">
-        <a class="header__logo">
-          <img src="./img/logo.jpg" alt="логотип сайта Седона" width="185" height="96">
-        </a>
-        <div class="header__burger">
-          <span></span>
-        </div>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li>
-              <a class="header__link" href="#">
-                Главная
-              </a>
-            </li>
-            <li>
-              <a class="header__link" href="catalog.html">
-                Фото и видео
-              </a>
-            </li>
-            <li>
-              <a class="header__link" href="form.html">
-                Форма Отзыва
-              </a>
-            </li>
-            <li>
-              <a class="header__link" href="https://htmlacademy.ru">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <a class="header__logo">
+      <img src="./img/logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+    </a>
+    <nav class="navigation  navigation--closed">
+      <button class="navigation__menu-button" type="button">
+        <span class="visually-hidden">Меню навигации</span>
+      </button>
+      <div class="navigation__list">
+        <a class="navigation__link navigation__link--current">Главная</a>
+        <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        <a class="navigation__link" href="form.html">Форма отзыва</a>
+        <a class="navigation__link" href="#">HTML Academy</a>
       </div>
-    </div>
+
+    </nav>
   </header>
 
   <main class="main-container">
@@ -194,6 +175,8 @@
     </div>
 
   </footer>
+
+  <script src="../script.js"></script>
 
 </body>
 
