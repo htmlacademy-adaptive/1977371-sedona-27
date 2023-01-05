@@ -12,35 +12,25 @@
 </head>
 
 <body class="body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img src="./img/logo.jpg" alt="логотип сайта Седона" width="185" height="96">
+
+  <header class="header">
+
+    <a class="header__logo">
+      <img src="./img/logo.svg" alt="Логотип 'Седона'" width="185" height="96">
     </a>
-    <nav class="main-header__nav main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html">
-            Фото и видео
-          </a>
-        </li>
-        <li class="site-list__item current">
-          <a href="#">
-            Форма Отзыва
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru">
-            HTML ACADEMY
-          </a>
-        </li>
-      </ul>
+
+    <nav class="navigation  navigation--closed">
+      <button class="navigation__menu-button" type="button">
+        <span class="visually-hidden">Меню навигации</span>
+      </button>
+      <div class="navigation__list">
+        <a class="navigation__link" href="index.html">Главная</a>
+        <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        <a class="navigation__link navigation__link--current" >Форма отзыва</a>
+        <a class="navigation__link" href="#">HTML Academy</a>
+      </div>
     </nav>
+
   </header>
 
   <main class="main-container">

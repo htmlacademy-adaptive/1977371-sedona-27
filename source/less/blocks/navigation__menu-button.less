@@ -11,6 +11,10 @@
     right: 0;
     z-index: 2;
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .navigation--closed .navigation__menu-button:hover {
@@ -35,7 +39,6 @@
 .navigation--opened .navigation__menu-button {
   @media (max-width: @mobile-width-only) {
     top: 0;
-    right: auto;
     right: 0;
 
     &::before,
@@ -62,11 +65,5 @@
     &:active::after {
       background-color: fade(#ffffff, 30%);
     }
-  }
-}
-
-.navigation__menu-button {
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
