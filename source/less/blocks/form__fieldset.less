@@ -1,0 +1,111 @@
+.form__wrapper {
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #dbdbdb;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #dbdbdb;
+    margin: 0;
+    padding: 0 20px;
+    padding-bottom: 39px;
+  }
+}
+
+.form__fieldset:nth-child(1) {
+  @media (min-width: @mobile-width-only) {
+    padding-right: 43px;
+    padding-bottom: 15px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 63px;
+    padding-bottom: 15px;
+    margin-bottom: 56px;
+  }
+}
+
+.form__fieldset:nth-child(2) {
+  @media (min-width: @mobile-width-only) {
+    padding-left: 43px;
+    padding-bottom: 15px;
+    border-left: 1px solid #dbdbdb;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 63px;
+    padding-bottom: 15px;
+    margin-bottom: 56px;
+  }
+}
+
+.form__fieldset:nth-child(3) {
+  @media (min-width: @mobile-width-only) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__fieldset:nth-child(4) {
+  @media (min-width: @mobile-width-only) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__fieldset:nth-child(5) {
+  @media (min-width: @mobile-width-only) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__fieldset legend {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 402px;
+    font-size: 21px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+}
+
+.form__fieldset textarea {
+    resize: none;
+    display: block;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    min-height: 150px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #f2f2f2;
+}
+
+.form__fieldset:last-child {
+  @media (max-width: @mobile-width-only) {
+    border: none;
+  }
+}

@@ -1,0 +1,86 @@
+.visited-attractions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: @mobile-width-only) {
+    text-align: start;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 224px 224px;
+    row-gap: 16px;
+    column-gap: 32px;
+    padding: 0 84px 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.visited-attractions__item {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 20px;
+  }
+}
+
+.visited-attractions__item:last-child {
+  @media (max-width: @mobile-width-only) {
+    margin: 0;
+  }
+}
+
+.visited-attractions__item label {
+  text-transform: none;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.visited-attractions__item span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 62px;
+    min-height: 46px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    padding-left: 62px;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.visited-attractions__item span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.visited-attractions__item span::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 12px;
+  background-image: url(../../icons/tick.svg);
+}

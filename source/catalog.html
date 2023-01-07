@@ -53,7 +53,14 @@
 
         <li class="catalog__item">
           <div class="catalog__item-photo">
-            <img src="./img/catalog/photo-1-mobile@1x.jpg" alt="неродные просторы" width="280" height="280">
+            <picture>
+              <source media="(max-width: 1200px)"
+                srcset="img/catalog/photo-1-desktop@1x.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+              <source media="(max-width: 768px)"
+                srcset="img/catalog/photo-1-tablet@1x.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+              <img src="./img/catalog/photo-1-mobile@1x.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x"
+                alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog__item-block">
             <div>
@@ -73,7 +80,14 @@
 
         <li class="catalog__item">
           <div class="catalog__item-photo">
-            <img src="./img/catalog/photo-2-mobile@1x.jpg" alt="местная растительность" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/catalog/photo-2-desktop@1x.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog/photo-2-tablet@1x.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+              <img src="./img/catalog/photo-2-mobile@1x.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x"
+                alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog__item-block">
             <div>
@@ -93,7 +107,12 @@
 
         <li class="catalog__item">
           <div class="catalog__item-photo">
-            <img src="./img/catalog/photo-3-mobile@1x.jpg" alt="дорога на север" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop@1x.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet@1x.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+              <img src="./img/catalog/photo-3-mobile@1x.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x"
+                alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog__item-block">
             <div>
@@ -113,7 +132,12 @@
 
         <li class="catalog__item">
           <div class="catalog__item-photo">
-            <img src="./img/catalog/photo-4-mobile@1x.jpg" alt="мост дьявола" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop@1x.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet@1x.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+              <img src="./img/catalog/photo-4-mobile@1x.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x"
+                alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
           <div class="catalog__item-block">
             <div>
@@ -144,8 +168,14 @@
       </div>
       <div class="video__play">
         <div class="video__image">
-          <img src="./img/catalog/video-mobile@1x.jpg" alt="видеопрезентация" class="information" width="280"
-            height="177">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/video-desktop@1x.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/video-tablet@1x.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+            <img src="./img/catalog/video-mobile@1x.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x"
+              alt="видеопрезентация" width="280" height="177">
+          </picture>
         </div>
         <button class="video__image-button" type="button">
           <span class="visually-hidden">Нажмите, чтобы воспроизвести видео</span>

@@ -56,7 +56,14 @@
             <p class="advantages__item-text">седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantages__item-photo">
-            <img width="320" height="260" src="./img/photo-city-mobile@1x.jpg" alt="фото городка">
+            <picture>
+              <source media="(max-width: 1200px)"
+                srcset="img/catalog/photo-city-desktop@1x.jpg 1x, img/catalog/photo-city-desktop@2x.jpg 2x">
+              <source media="(max-width: 768px)"
+                srcset="img/photo-city-tablet@1x.jpg 1x, img/catalog/photo-city-tablet@2x.jpg 2x">
+              <img width="320" height="260" src="./img/photo-city-mobile@1x.jpg"
+                srcset="img/photo-city-mobile@2x.jpg 2x" alt="фото городка">
+            </picture>
           </div>
 
           <ul class="service__list">
@@ -103,7 +110,13 @@
             </div>
           </div>
           <div class="advantages__item-photo">
-            <img width="320" height="260" src="./img/photo-bridge-mobile@1x.jpg" alt="фото каньона">
+            <picture>
+              <source media="(max-width: 1200px)"
+                srcset="img/catalog/photo-bridge-desktop@1x.jpg 1x, img/catalog/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(max-width: 768px)"
+                srcset="img/photo-bridge-tablet@1x.jpg 1x, img/catalog/photo-bridge-tablet@2x.jpg 2x">
+              <img width="320" height="260" src="./img/photo-bridge-mobile@1x.jpg 1x" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="фото каньона">
+            </picture>
           </div>
         </div>
 
