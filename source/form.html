@@ -26,7 +26,7 @@
       <div class="navigation__list">
         <a class="navigation__link" href="index.html">Главная</a>
         <a class="navigation__link" href="catalog.html">Фото и видео</a>
-        <a class="navigation__link navigation__link--current" >Форма отзыва</a>
+        <a class="navigation__link navigation__link--current">Форма отзыва</a>
         <a class="navigation__link" href="#">HTML Academy</a>
       </div>
     </nav>
@@ -34,18 +34,21 @@
   </header>
 
   <main class="main-container">
-
-    <div class="hero">
-      <div class="hero__wrapper">
-        <img class="hero__wrapper-image" src="./img/sedona.jpg" alt="главная картинка седоны" width="901" height="389">
+    <h1 class="visually-hidden">Главная картинка Седоны</h1>
+    <section class="hero hero--decoration">
+      <div class="hero__image-block">
+        <div class="hero__image">
+          <img src="./img/sedona-welcome.svg" alt="welcom to the SEDONA" width="282" height="214">
+        </div>
       </div>
-    </div>
 
-    <div class="catalog-intro catalog-intro--form">
-      <h1 class="catalog-intro__title catalog-intro__title--form">оставьте свой отзыв</h1>
-      <p class="catalog-intro__text catalog-intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о них,
-        а также о посещенных вами достопримечательностях</p>
-    </div>
+      <div class="catalog-intro catalog-intro--form">
+        <h1 class="catalog-intro__title catalog-intro__title--form">оставьте свой отзыв</h1>
+        <p class="catalog-intro__text catalog-intro__text--form">Помогите нашим отелям стать лучше! оставьте отзыв о
+          них,
+          а также о посещенных вами достопримечательностях</p>
+      </div>
+    </section>
 
     <section class="form">
       <form class="form__wrapper">
@@ -87,20 +90,23 @@
           <ul class="impression-form">
             <li class="impression-form__item">
               <label>
-                <input name="impression-form-radio" class="impression-form-radio visually-hidden" type="radio" value="positive" checked>
-                <span>Скорее положительное</span>
+                <input name="impression-form-radio" class="impression-form-radio visually-hidden" type="radio"
+                  value="positive" checked>
+                <span class="impression-form-radio-input">Скорее положительное</span>
               </label>
             </li>
             <li class="impression-form__item">
               <label>
-                <input name="impression-form-radio" class="impression-form-radio visually-hidden" type="radio" value="positive">
-                <span>Скорее отрицательное</span>
+                <input name="impression-form-radio" class="impression-form-radio visually-hidden" type="radio"
+                  value="positive">
+                <span class="impression-form-radio-input">Скорее отрицательное</span>
               </label>
             </li>
             <li class="impression-form__item">
               <label>
-                <input name="impression-form-radio" class="impression-form-radio visually-hidden" type="radio" value="positive">
-                <span>Затрудняюсь ответить</span>
+                <input name="impression-form-radio" class="impression-form-radio visually-hidden" type="radio"
+                  value="positive">
+                <span class="impression-form-radio-input">Затрудняюсь ответить</span>
               </label>
             </li>
           </ul>
@@ -111,30 +117,30 @@
           <ul class="visited-attractions">
             <li class="visited-attractions__item">
               <label>
-                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox visually-hidden"
-                  id="bridge" name="bridge" checked>
-                <span>Мост Дьявола</span>
+                <input type="checkbox" name="visited-attractions-checkbox"
+                  class="visited-attractions-checkbox visually-hidden" id="bridge" name="bridge" checked>
+                <span class="visited-attractions-checkbox-text">Мост Дьявола</span>
               </label>
             </li>
             <li class="visited-attractions__item">
               <label>
-                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox visually-hidden"
-                  id="mountain" name="mountain" checked>
-                <span>Гора-Колокол</span>
+                <input type="checkbox" name="visited-attractions-checkbox"
+                  class="visited-attractions-checkbox visually-hidden" id="mountain" name="mountain" checked>
+                <span class="visited-attractions-checkbox-text">Гора-Колокол</span>
               </label>
             </li>
             <li class="visited-attractions__item">
               <label>
-                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox visually-hidden"
-                  id="park" name="park" checked>
-                <span>Слайд-парк</span>
+                <input type="checkbox" name="visited-attractions-checkbox"
+                  class="visited-attractions-checkbox visually-hidden" id="park" name="park" checked>
+                <span class="visited-attractions-checkbox-text">Слайд-парк</span>
               </label>
             </li>
             <li class="visited-attractions__item">
               <label>
-                <input type="checkbox" name="visited-attractions-checkbox" class="visited-attractions-checkbox visually-hidden"
-                  id="rocks" name="rocks" checked>
-                <span>Красные скалы</span>
+                <input type="checkbox" name="visited-attractions-checkbox"
+                  class="visited-attractions-checkbox visually-hidden" id="rocks" name="rocks" checked>
+                <span class="visited-attractions-checkbox-text">Красные скалы</span>
               </label>
             </li>
           </ul>
@@ -142,17 +148,19 @@
 
         <fieldset class="form__fieldset">
           <legend>Опишите свои эмоции:</legend>
-          <textarea class="form__fieldset--textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__fieldset--textarea" name="emotions"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
       </form>
     </section>
 
     <div class="emotions">
-      <button class="button">отправить отзыв
+      <button class="emotions__button button">отправить отзыв
       </button>
       <p class="emotions__text">* — обязательные поля</p>
     </div>
+
   </main>
 
   <footer class="main-footer">

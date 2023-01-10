@@ -1,11 +1,27 @@
+.hero__image {
+  max-width: 282px;
+  max-height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 460px;
+    max-height: 350px;
+    margin: 0 auto;
+  }
+}
+
 .hero__image-block {
   position: relative;
   padding: 90px 20px 85px;
-  background-image: url("../../img/sedona.jpg");
+  background-image: url("../../img/back-mobile.jpg.jpg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/back-desktop.jpg.jpg");
+  }
 }
 
 .hero__image-block::before {

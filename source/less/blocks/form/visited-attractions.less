@@ -22,6 +22,7 @@
 }
 
 .visited-attractions__item {
+  display: block;
   @media (max-width: @mobile-width-only) {
     margin-bottom: 20px;
   }
@@ -42,7 +43,7 @@
 }
 
 
-.visited-attractions__item span {
+.visited-attractions-checkbox-text {
   position: relative;
   display: flex;
   align-items: center;
@@ -63,7 +64,7 @@
   }
 }
 
-.visited-attractions__item span::before {
+.visited-attractions-checkbox-text::before {
   content: "";
   position: absolute;
   top: 0;
@@ -74,7 +75,7 @@
   background-color: #f2f2f2;
 }
 
-.visited-attractions__item span::after {
+.visited-attractions-checkbox-text::after {
   content: "";
   position: absolute;
   display: none;
@@ -83,4 +84,9 @@
   top: 15px;
   left: 12px;
   background-image: url(../../icons/tick.svg);
+}
+
+
+.visited-attractions-checkbox:checked + .visited-attractions-checkbox-text::after {
+  display: block;
 }

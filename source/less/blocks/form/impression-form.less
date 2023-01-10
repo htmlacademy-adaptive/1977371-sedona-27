@@ -17,6 +17,7 @@
   }
 }
 
+
 .impression-form__item {
   position: relative;
   display: block;
@@ -30,7 +31,7 @@
   }
 }
 
-.impression-form__item span {
+.impression-form-radio-input {
   padding-left: 62px;
   min-height: 46px;
   display: flex;
@@ -38,7 +39,7 @@
   cursor: pointer;
 }
 
-.impression-form__item span::before {
+.impression-form-radio-input::before {
   content: "";
   position: absolute;
   top: 0;
@@ -49,9 +50,9 @@
   background-color: #f2f2f2;
 }
 
-.impression-form__item span::after {
+.impression-form-radio-input::after {
   content: "";
-  display: block;
+  display: none;
   position: absolute;
   width: 16px;
   height: 16px;
@@ -59,4 +60,8 @@
   left: 15px;
   border-radius: 50%;
   background-color: #333333;
+}
+
+.impression-form-radio:checked + .impression-form-radio-input::after {
+  display: block;
 }
