@@ -3,6 +3,15 @@
   display: flex;
   width: 128px;
   height: 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000000;
 
   @media (min-width: @tablet-width) {
     margin: 43px 76px 43px 100px;
@@ -14,12 +23,7 @@
 }
 
 .developed p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
+
   margin: 6.55px auto;
 }
 
@@ -29,4 +33,15 @@
   @media (min-width: @tablet-width) {
     margin-left: 12px;
   }
+}
+
+
+.developed:focus,
+.developed:hover {
+  background-color: #669ec0;
+}
+
+.developed:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }

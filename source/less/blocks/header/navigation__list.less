@@ -1,4 +1,9 @@
 .navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+
   @media (max-width: @mobile-width-only) {
     position: absolute;
     left: 0;
@@ -18,25 +23,24 @@
       bottom: 0;
     }
   }
+}
 
-  @media (min-width: @tablet-width) {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    z-index: 0;
+@media (min-width: @tablet-width) {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  z-index: 0;
 
-    &::before {
-      display: none;
-    }
+  &::before {
+    display: none;
   }
+}
 
-
-  @media (min-width: @tablet-width) {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    z-index: 0;
-  }
+@media (min-width: @tablet-width) {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  z-index: 0;
 }

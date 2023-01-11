@@ -39,14 +39,19 @@ img {
   text-decoration: none;
   display: block;
   cursor: pointer;
- }
+}
 
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #669ec0;
 }
 
 .button:active {
   background-color: #5496bd;
-  color:#ffffff;
+  color: fade(#ffffff; 30%);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
 }

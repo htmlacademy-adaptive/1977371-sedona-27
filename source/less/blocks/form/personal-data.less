@@ -5,6 +5,10 @@
   text-align: start;
 }
 
+.personal-data div {
+  display: flex;
+}
+
 .personal-data__item:first-child {
   margin-bottom: 16px;
 }
@@ -23,11 +27,21 @@
   display: block;
   font-family: inherit;
   font-weight: 700;
-  padding: 16px;
+  padding: 16px 69px 16px 16px;
   box-sizing: border-box;
   border: none;
   background-color: #f2f2f2;
-  width: 100%;
+  width: 222px;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @desktop-width) {
+    width: 344px;
+  }
+
+}
+
+.personal-data svg {
+  padding: 20px;
+  background-color: #e6e6e6;
 }
