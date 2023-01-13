@@ -7,12 +7,23 @@
     padding-top: 6px;
     max-height: 25px;
   }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__item-likes svg {
   margin-right: 14px;
+  fill: #000000;
+  opacity: 0.3;
 
   @media (min-width: @tablet-width) {
     margin-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
   }
 }

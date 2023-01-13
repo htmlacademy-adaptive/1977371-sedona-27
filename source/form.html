@@ -8,7 +8,11 @@
   <link rel="preload" href="./fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <title>SEDONA-form</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="body">
@@ -24,15 +28,15 @@
         <span class="visually-hidden">Меню навигации</span>
       </button>
       <div class="navigation__block">
-        <ul  class="navigation__list">
+        <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Форма отзыва</a>
+            <a class="navigation__link navigation__link--current" href="form.html">Форма отзыва</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="https://up.htmlacademy.ru">HTML Academy</a>
@@ -232,5 +236,19 @@
   </footer>
 
 </body>
+
+<div class="modal modal--hidden">
+  <div class="modal__content">
+    <div class="modal__text-block">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы
+        опубликуем его на сайте.</p>
+    </div>
+    <div class="modal__button-block">
+      <button class="modal__button button" type="button">Закрыть окно</button>
+    </div>
+  </div>
+</div>
+
 
 </html>
