@@ -13,14 +13,36 @@
 .hero__image-block {
   position: relative;
   padding: 90px 20px 85px;
-  background-image: url("../../img/back-mobile.jpg.jpg");
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url("../../img/back-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/back-desktop.jpg.jpg");
+    background-image: url("../../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-desktop@2x.jpg");
+    }
+  }
+
+  &--text {
+    @media (min-width: @mobile-width-only) {
+      padding: 52px 45px 67px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 95px 156px 117px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 101px 370px 120px;
+    }
   }
 }
 
