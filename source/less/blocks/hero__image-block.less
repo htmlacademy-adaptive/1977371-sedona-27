@@ -1,0 +1,62 @@
+.hero__image {
+  max-width: 282px;
+  max-height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 460px;
+    max-height: 350px;
+    margin: 0 auto;
+  }
+}
+
+.hero__image-block {
+  position: relative;
+  padding: 90px 20px 85px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../img/back-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../../img/back-desktop@2x.jpg");
+    }
+  }
+
+  &--text {
+    @media (min-width: @mobile-width-only) {
+      padding: 52px 45px 67px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 95px 156px 117px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 101px 370px 120px;
+    }
+  }
+}
+
+.hero__image-block::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 57px;
+  background-color: transparent;
+  background-image: url("../../img/zig-zag.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}

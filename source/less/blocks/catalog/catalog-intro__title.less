@@ -1,0 +1,45 @@
+.catalog-intro__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
+
+  &--catalog {
+    @media (max-width: @mobile-width-only) {
+      padding: 0;
+      margin: 0 auto 35px;
+    }
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+      margin-bottom: 37px;
+    }
+  }
+
+  &--form {
+    @media (max-width: @mobile-width-only) {
+      margin: 0 auto 24px;
+    }
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+      margin: 0 auto 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 32px;
+    }
+  }
+}

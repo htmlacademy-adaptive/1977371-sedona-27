@@ -1,0 +1,13 @@
+.advantages__list-photo {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__list:nth-child(2n+2) .advantages__item-photo {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+}

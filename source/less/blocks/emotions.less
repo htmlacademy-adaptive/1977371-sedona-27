@@ -1,0 +1,50 @@
+.emotions {
+  @media (max-width: @mobile-width-only) {
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 32px;
+    max-width: 384px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 768px;
+    margin: auto;
+  }
+}
+
+.emotions__button {
+  font-family: inherit;
+  border: none;
+  padding: 16px 0;
+  width: 100%;
+
+  @media (max-width: @mobile-width-only) {
+    max-width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 324px;
+  }
+}
+
+.emotions__text {
+  text-transform: uppercase;
+  text-align: right;
+  margin: 0;
+  font-size: 12px;
+  line-height: 21px;
+  color: #333333;
+  max-width: 384px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+  }
+}

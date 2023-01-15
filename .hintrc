@@ -1,4 +1,3 @@
-
 {
   "extends": [
     "development"
@@ -9,7 +8,16 @@
       {
         "link-name": "off"
       }
+    ],
+    "meta-viewport": "off",
+    "apple-touch-icons": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "iframe[loading]"
+        ]
+      }
     ]
   }
 }
-
