@@ -4,16 +4,29 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  margin-top: 28.5px;
+  margin-top: 38px;
   margin-bottom: 33.5px;
 
   @media (min-width: @tablet-width) {
     width: 166px;
-    margin: 48.5px 97px 45.5px 45px;
     text-align: center;
+    max-height: 26px;
+    margin: 48.5px 97px 45.5px 45px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 48.5px 245px 45.5px 104px;
+    margin: 48.5px 250px 45.5px 104px;
+  }
+
+  &--catalog {
+    margin-top: 28px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 40px;
+    }
   }
 }
