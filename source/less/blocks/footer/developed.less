@@ -1,5 +1,5 @@
 .developed {
-  margin: 37px auto 23px;
+  margin: 40px auto 23px;
   display: flex;
   width: 128px;
   height: 34px;
@@ -19,6 +19,22 @@
 
   @media (min-width: @desktop-width) {
     margin: 43px 136px 43px 256px;
+  }
+
+  &--catalog {
+    @media(min-width: @tablet-width) {
+      margin: 43px 60px 43px 120px;
+    }
+
+    @media(min-width: @desktop-width) {
+      margin: 43px 120px 43px 60px;
+    }
+  }
+
+  &--form {
+    @media (min-width: @desktop-width) {
+      margin: 43px 120px 43px 270px;
+    }
   }
 }
 
