@@ -218,11 +218,6 @@ import svgo from 'gulp-svgmin';
 import { stacksvg } from 'gulp-stacksvg';
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import { stacksvg } from 'gulp-stacksvg';
-import {deleteAsync} from 'del';
-import browser from 'browser-sync';
 
 // Styles
 
