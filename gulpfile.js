@@ -5,11 +5,11 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-import browser from 'browser-sync';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import del from 'del';
+import { stacksvg } from 'gulp-stacksvg';
+import {deleteAsync} from 'del';
+import browser from 'browser-sync';
 
 // Styles
 
@@ -72,18 +72,9 @@ gulp.src(['source/img/icons/*.svg', 'source/icons/*.svg'])
 const sprite = () => {
 return gulp.src('source/icons/*.svg')
 .pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
-.pipe(rename('sprite.svg'))
+.pipe(stacksvg({ output: 'sprite.svg' }))
 .pipe(gulp.dest('build/img'));
 }
-
-// Clean
-
-const clean = () => {
-  return del('build');
-};
 
 // Copy
 
@@ -98,7 +89,11 @@ const copy = (done) => {
   done();
 }
 
+// Clean
 
+const clean = () => {
+  return deleteAsync('build');
+};
 
 // Server
 
@@ -114,14 +109,52 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
+  gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+// Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  sprite,
+  createWebp
+  ),
+);
+
+// Default
 
 export default gulp.series(
-  styles, html, scripts, optimizeImages, copyImages, createWebp, svg, sprite, copy, clean, server, watcher
-);
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  svg,
+  sprite,
+  createWebp
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));
