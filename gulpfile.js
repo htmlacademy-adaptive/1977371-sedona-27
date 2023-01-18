@@ -14,6 +14,10 @@ import {deleteAsync} from 'del';
 =======
 >>>>>>> 3fc954b (gulp 17:38)
 import browser from 'browser-sync';
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from 'gulp-svgstore';
+import del from 'del';
 
 // Styles
 
