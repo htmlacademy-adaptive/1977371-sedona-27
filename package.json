@@ -4,7 +4,7 @@
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.13",
     "browser-sync": "2.27.7",
     "del": "^7.0.0",
     "gulp": "^4.0.2",
