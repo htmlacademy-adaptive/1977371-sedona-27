@@ -7,13 +7,13 @@
     display: grid;
     grid-template-columns: 280px 280px;
     row-gap: 16px;
-    padding: 0 36px 58px;
+    padding: 0 36px 38px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    padding: 0 53px 56px;
-    justify-content: space-between;
+    padding: 0 53px 65px;
+    column-gap: 64px;
   }
 }
 
@@ -26,7 +26,13 @@
   text-transform: none;
 
   @media (max-width: @mobile-width-only) {
-    margin-bottom: 36px;
+    margin-bottom: 17px;
+  }
+}
+
+.impression-form__item:first-child {
+  @media (min-width: @desktop-width) {
+    margin-left: 48px;
   }
 }
 

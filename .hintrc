@@ -18,6 +18,13 @@
           "iframe[loading]"
         ]
       }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
     ]
   }
 }
