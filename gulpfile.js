@@ -9,6 +9,7 @@ import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 =======
 >>>>>>> 3fc954b (gulp 17:38)
@@ -68,11 +69,7 @@ const createWebp = () => {
   // SVG
 
 const svg = () =>
-<<<<<<< HEAD
-gulp.src(['source/img/*.svg', 'source/img/icons/*.svg'])
-=======
-gulp.src(['source/img/icons/*.svg', 'source/icons/*.svg'])
->>>>>>> 3fc954b (gulp 17:38)
+gulp.src(['source/img/icons/*.svg', 'source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
