@@ -10,10 +10,6 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import del from 'del';
 
 // Styles
 
