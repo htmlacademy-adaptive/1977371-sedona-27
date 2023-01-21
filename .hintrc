@@ -25,6 +25,7 @@
       {
         "frame-title": "off"
       }
-    ]
+    ],
+    "manifest-app-name": "off"
   }
 }
