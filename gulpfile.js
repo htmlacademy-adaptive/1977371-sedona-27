@@ -7,8 +7,8 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import { stacksvg } from 'gulp-stacksvg';
-import {deleteAsync} from 'del';
+import svgstore from 'gulp-svgstore';
+import { deleteAsync } from 'del';
 import browser from 'browser-sync';
 
 // Styles
@@ -65,15 +65,18 @@ const createWebp = () => {
   // SVG
 
 const svg = () =>
-gulp.src(['source/img/icons/*.svg', 'source/icons/*.svg'])
+gulp.src(['source/img/icons/*.svg', 'source/img/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-return gulp.src('source/icons/*.svg')
-.pipe(svgo())
-.pipe(stacksvg({ output: 'sprite.svg' }))
-.pipe(gulp.dest('build/img'));
+  return gulp.src('source/img/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+  inlineSvg: true
+  }))
+  .pipe(rename( 'sprite.svg' ))
+  .pipe(gulp.dest('build/img'));
 }
 
 // Copy
