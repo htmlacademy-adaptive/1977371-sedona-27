@@ -5,18 +5,9 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
-<<<<<<< HEAD
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import svgstore from 'gulp-svgstore';
-import {deleteAsync} from 'del';
-=======
->>>>>>> 3fc954b (gulp 17:38)
-import browser from 'browser-sync';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import { stacksvg } from 'gulp-stacksvg';
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 
@@ -79,7 +70,6 @@ gulp.src(['source/img/icons/*.svg', 'source/img/icons/*.svg'])
 .pipe(gulp.dest('build/img'));
 
 const sprite = () => {
-<<<<<<< HEAD
   return gulp.src('source/img/icons/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
@@ -89,23 +79,6 @@ const sprite = () => {
   .pipe(gulp.dest('build/img'));
 }
 
-=======
-return gulp.src('source/icons/*.svg')
-.pipe(svgo())
-.pipe(svgstore({
-inlineSvg: true
-}))
-.pipe(rename('sprite.svg'))
-.pipe(gulp.dest('build/img'));
-}
-
-// Clean
-
-const clean = () => {
-  return del('build');
-};
-
->>>>>>> 3fc954b (gulp 17:38)
 // Copy
 
 const copy = (done) => {
@@ -120,21 +93,30 @@ const copy = (done) => {
   done();
 }
 
-<<<<<<< HEAD
 // Clean
+const clean = () => {
+  return del('build');
+  };
 
+// Build
 
-  gulp.watch('source/*.html').on('change', browser.reload);
-
+export const build = gulp.series(
+  clean,
+  copy,
   optimizeImages,
+  gulp.parallel(
+  styles,
+  html,
   scripts,
+  svg,
+  sprite,
+  createWebp
   ),
-);
+  );
 
-// Default
+  // Default
 
-export default gulp.series(
-<<<<<<< HEAD
+  export default gulp.series(
   clean,
   copy,
   copyImages,
@@ -150,7 +132,3 @@ export default gulp.series(
   server,
   watcher
   ));
-=======
-  styles, html, scripts, optimizeImages, copyImages, createWebp, svg, sprite, copy, clean, server, watcher
-);
->>>>>>> 3fc954b (gulp 17:38)
