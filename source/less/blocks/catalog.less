@@ -1,0 +1,131 @@
+.catalog__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+}
+
+.catalog__item {
+  @media (max-width: @mobile-width-only) {
+    margin: 0;
+    padding: 24px 20px 25px;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.catalog__item:last-child {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+
+.catalog__item:first-child {
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+  }
+}
+.catalog__item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    padding-bottom: 3px;
+  }
+}
+
+.catalog-intro__title br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.catalog__item-likes {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+    max-height: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    padding-top: 10px;
+  }
+}
+
+.catalog__item-likes svg {
+  margin-right: 10px;
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+.catalog__item-autor {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  color: #333333;
+  text-transform: none;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+.catalog__item-block {
+  text-align: start;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 15px auto 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    padding: 23px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 17px 24px;
+  }
+}

@@ -1,7 +1,14 @@
 .form__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px 48px;
+  }
+
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid #dbdbdb;
   }
+
 }
 
 .form__fieldset {
