@@ -1,3 +1,4 @@
+console.log("Hello")
 let navigation = document.querySelector('.navigation');
 let navToggle = document.querySelector('.navigation__menu-button');
 

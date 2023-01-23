@@ -17,10 +17,11 @@
 
 <body class="body">
   <div class="body__block">
-    <header class="header"><a class="header__logo">
+    <header class="header">
+      <a class="header__logo" href="index.html">
         <img src="./img/logo.svg" alt="Логотип 'Седона'" width="185" height="96">
       </a>
-      <nav class="navigation navigation--opened navigation--nojs"><button class="navigation__menu-button"
+      <nav class="navigation navigation--closed navigation--nojs"><button class="navigation__menu-button"
           type="button"><span class="visually-hidden">Меню навигации</span></button>
         <div class="navigation__block">
           <ul class="navigation__list">
@@ -41,7 +42,7 @@
               height="214"></div>
         </div>
         <div class="catalog-intro">
-          <h1 class="catalog-intro__title">седона — небольшой<br>городок в аризоне, заслуживающий большего!</h1>
+          <h2 class="catalog-intro__title">седона — небольшой<br>городок в аризоне, заслуживающий большего!</h2>
           <p class="catalog-intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
@@ -50,7 +51,7 @@
           <div class="advantages__list advantages__list-photo">
             <div class="advantages__item-block advantages__item-block--full-row">
               <h2 class="advantages__item-title">настоящий<br>городок</h2>
-              <p class="advanteges__item-number">— №1 —</p>
+              <p class="advantages__item-number">— №1 —</p>
               <p class="advantages__item-text">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__item-photo">
@@ -62,7 +63,7 @@
                   src="./img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="фото городка">
               </picture>
             </div>
-            <ul class="service__list">
+            <ul class="service">
               <li class="service__item">
                 <div class="service__image"><img src="./img/housing.svg" alt="home" height="40" width="40"></div>
                 <div class="service__block">
@@ -91,7 +92,7 @@
             <div class="advantages__item">
               <div class="advantages__item-block advantages__item-block--full-row advantages__item-block--full-row2">
                 <h2 class="advantages__item-title">там есть<br>мост дьявола</h2>
-                <p class="advanteges__item-number">— №2 —</p>
+                <p class="advantages__item-number">— №2 —</p>
                 <p class="advantages__item-text">да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
             </div>
@@ -109,26 +110,27 @@
           <div class="advantages__list">
             <div class="advantages__item">
               <h2 class="advantages__item-title">небольшая<br>площадь</h2>
-              <p class="advanteges__item-number">— №3 —</p>
+              <p class="advantages__item-number">— №3 —</p>
               <p class="advantages__item-text">все интересные места находятся очень близко</p>
             </div>
           </div>
           <div class="advantages__list">
             <div class="advantages__item">
               <h2 class="advantages__item-title">красивая<br>дорога</h2>
-              <p class="advanteges__item-number">— №4 —</p>
+              <p class="advantages__item-number">— №4 —</p>
               <p class="advantages__item-text">ехать в седону из Лас-Вегаса совсем не&nbsp;скучно!</p>
             </div>
           </div>
           <div class="advantages__list">
             <div class="advantages__item">
               <h2 class="advantages__item-title">мало<br>туристов</h2>
-              <p class="advanteges__item-number">— №5 —</p>
+              <p class="advantages__item-number">— №5 —</p>
               <p class="advantages__item-text">большинство едет в гранд каньон<br>и толпится там</p>
             </div>
           </div>
         </div>
       </section>
+
       <section class="information">
         <div class="information__block">
           <h3 class="information__title">заинтересоваись?</h3>
@@ -136,13 +138,21 @@
             гостиниц в седоне</p>
         </div><a class="information__button button" href="#">найти гостиницу</a>
       </section>
-      <section class="maps"><iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104375.36576211691!2d-111.6795972862738!3d35.16334936328567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6b38c28b698d0d4a!2z0J3QsNGG0LjQvtC90LDQu9GM0L3Ri9C5INC30LDQv9C-0LLQtdC00L3QuNC6INCa0L7QutC-0L3QuNC90L4!5e0!3m2!1sru!2sru!4v1672914161759!5m2!1sru!2sru"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe></section>
+
+      <div class="maps">
+        <picture>
+          <source media="(min-width: 1199px)"
+            srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 321px)"
+            srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg 2x">
+            <img width="320" height="260" src="./img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+            alt="фото каньона">
+        </picture>
+      </div>
+
     </main>
     <footer class="main-footer">
-      <div class="main-footer__social">
+      <div class="main-footer__social social">
         <div class="social__title"><b>#visitSEDONA</b></div>
         <div class="social__list">
 
@@ -168,9 +178,10 @@
           </a>
 
         </div>
+
         <a class="developed" href="https://htmlacademy.ru">
           <p>Разработано</p>
-          <svg viewBox="27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
               fill="currentcolor" />
@@ -178,7 +189,7 @@
         </a>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
   </div>
 </body>
 
