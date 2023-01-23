@@ -16,6 +16,18 @@
   }
 }
 
+.header__logo--nojs {
+  margin-bottom: -40px;
+  position: static;
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
 .header__logo img {
   display: block;
   width: 100%;
