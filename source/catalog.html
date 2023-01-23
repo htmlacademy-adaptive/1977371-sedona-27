@@ -9,7 +9,7 @@
   <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./css/style.min.css">
   <title>SEDONA-catalog</title>
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
@@ -17,8 +17,10 @@
 
 <body class="body">
   <div class="body__block">
-    <header class="header"><a class="header__logo"><img src="./img/logo.svg" alt="Логотип 'Седона'" width="185"
-          height="96"></a>
+    <header class="header">
+      <a class="header__logo" href="index.html">
+        <img src="./img/logo.svg" alt="Логотип 'Седона'" width="185" height="96">
+      </a>
       <nav class="navigation navigation--closed navigation--nojs"><button class="navigation__menu-button"
           type="button"><span class="visually-hidden">Меню навигации</span></button>
         <div class="navigation__block">
@@ -41,7 +43,7 @@
           </div>
         </div>
         <div class="catalog-intro catalog-intro--catalog">
-          <h1 class="catalog-intro__title catalog-intro__title--catalog">фото и видео</h1>
+          <h2 class="catalog-intro__title catalog-intro__title--catalog">фото и видео</h2>
           <p class="catalog-intro__text catalog-intro__text--catalog">Не можете решиться на путешествие из-за
             курса?<br>Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
@@ -163,10 +165,11 @@
         </section>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__social">
-        <div class="social__title social__title--catalog"><b>#visitSEDONA</b></div>
+    <footer class="main-footer main-footer--form">
+      <div class="main-footer__social social">
+        <div class="social__title"><b>#visitSEDONA</b></div>
         <div class="social__list">
+
           <a class="social__link button" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте</span>
             <svg width="24" height="24">
@@ -189,8 +192,8 @@
           </a>
 
         </div>
-        <div class="developed developed--catalog">
-          <p>Разработано</p><svg viewBox="27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="developed">
+          <p>Разработано</p><svg viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z"
               fill="currentcolor" />

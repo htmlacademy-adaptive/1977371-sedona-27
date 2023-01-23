@@ -30,14 +30,20 @@ export const styles = () => {
 const html = () => {
   return gulp.src('source/*.html')
   .pipe(gulp.dest('build'));
-  }
+}
+
+// Webmanifest
+
+const manifest = () => {
+  return gulp.src("source/*.webmanifest").pipe(gulp.dest("build"));
+};
 
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/script.js')
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
-  }
+}
 
 // Images
 
@@ -60,7 +66,7 @@ const createWebp = () => {
   webp: {}
   }))
   .pipe(gulp.dest('build/img'))
-  }
+}
 
   // SVG
 
@@ -134,6 +140,7 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
+  manifest,
   styles,
   html,
   scripts,
@@ -150,6 +157,7 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
+  manifest,
   styles,
   html,
   scripts,
