@@ -1,3 +1,9 @@
+.impression {
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
 .impression-form {
   list-style-type: none;
   padding: 0;
@@ -11,9 +17,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: auto;
     display: flex;
-    padding: 0 53px 65px;
-    column-gap: 64px;
+    flex-wrap: wrap;
+    padding: 0 32px 65px;
+    column-gap: 28px;
   }
 }
 
@@ -24,15 +32,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  width: 280px;
 
   @media (max-width: @mobile-width-only) {
     margin-bottom: 17px;
-  }
-}
-
-.impression-form__item:first-child {
-  @media (min-width: @desktop-width) {
-    margin-left: 48px;
   }
 }
 
