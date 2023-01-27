@@ -124,8 +124,13 @@
 }
 
 .form__fieldset:nth-child(5) {
+  @media (max-width: @mobile-width-only) {
+    border: none;
+  }
+
   @media (min-width: @mobile-width-only) {
     grid-column: 1 / -1;
+    border-top: 1px solid #dbdbdb;
   }
 }
 
@@ -175,10 +180,4 @@
   font-size: 18px;
   line-height: 26px;
   background-color: #f2f2f2;
-}
-
-.form__fieldset:last-child {
-  @media (max-width: @mobile-width-only) {
-    border: none;
-  }
 }

@@ -27,17 +27,35 @@
   display: block;
   font-family: inherit;
   font-weight: 700;
-  padding: 16px 69px 16px 16px;
+  padding: 16px;
   box-sizing: border-box;
   border: none;
   background-color: #f2f2f2;
   width: 222px;
   font-size: 18px;
   line-height: 26px;
+  border: 4px solid #f2f2f2;
+  max-height: 58px;
 
   @media (min-width: @desktop-width) {
     width: 344px;
   }
+}
+
+.personal-data input:hover {
+  border: 4px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+
+.personal-data input:active {
+  border: 4px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.personal-data input:focus {
+  border: 4px solid #f2f2f2;
+  background-color: #f2f2f2;
+  outline: none;
 }
 
 .personal-data svg {

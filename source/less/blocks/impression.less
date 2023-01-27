@@ -70,6 +70,19 @@
   background-color: #333333;
 }
 
+.impression-form-radio-input:active + .impression-form-radio-input::after {
+  opacity: 30%;
+}
+
+.impression-form-radio-input:active + .impression-form-radio-input::before {
+  background-color: #d5d5d5;
+}
+
+.impression-form-radio-input:hover + .impression-form-radio-input::before {
+  background-color: #e5e5e5;
+}
+
 .impression-form-radio:checked + .impression-form-radio-input::after {
   display: block;
 }
+
