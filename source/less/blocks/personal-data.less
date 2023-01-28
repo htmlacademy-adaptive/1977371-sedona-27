@@ -5,12 +5,20 @@
   text-align: start;
 }
 
-.personal-data div {
-  display: flex;
+.personal-data__wrapper {
+  margin-bottom: 12px;
 }
 
-.personal-data__item:first-child {
-  margin-bottom: 10px;
+.personal-data__wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.personal-data__item {
+  margin-bottom: 16px;
+}
+
+.personal-data__block {
+  display: flex;
 }
 
 .personal-data__text {
@@ -22,14 +30,12 @@
   text-transform: uppercase;
 }
 
-
-.personal-data input {
+.personal-data__block input {
   display: block;
   font-family: inherit;
   font-weight: 700;
   padding: 16px;
   box-sizing: border-box;
-  border: none;
   background-color: #f2f2f2;
   width: 222px;
   font-size: 18px;
@@ -42,23 +48,23 @@
   }
 }
 
-.personal-data input:hover {
+.personal-data__block input:hover {
   border: 4px solid #e5e5e5;
   background-color: #e5e5e5;
 }
 
-.personal-data input:active {
+.personal-data__block input:active {
   border: 4px solid #e5e5e5;
   background-color: #ffffff;
 }
 
-.personal-data input:focus {
+.personal-data__block input:focus {
   border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
   outline: none;
 }
 
-.personal-data svg {
+.personal-data__block svg {
   padding: 20px;
   background-color: #e6e6e6;
 }

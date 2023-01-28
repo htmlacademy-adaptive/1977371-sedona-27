@@ -1,12 +1,16 @@
 .form__wrapper {
+  @media (max-width: @mobile-width-only) {
+    border-top: 1px solid #dbdbdb;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 60px 48px;
   }
 
-  @media (max-width: @mobile-width-only) {
-    border-top: 1px solid #dbdbdb;
+  @media (min-width: @desktop-width) {
+    padding: 0 60px;
   }
 }
 
@@ -22,18 +26,24 @@
 
 .form__fieldset:nth-child(1) {
   @media (min-width: @mobile-width-only) {
-    padding-right: 43px;
+    padding-right: 55px;
     padding-bottom: 15px;
     margin-bottom: 45px;
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 50px 0 60px;
-    margin: 0 0 67px;
+    margin: 0 0 70px;
+  }
+}
+
+.form__fieldset:nth-child(1) legend {
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
   }
 }
 
@@ -43,19 +53,23 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 43px;
+    padding-left: 30px;
     padding-bottom: 15px;
     border-left: 1px solid #dbdbdb;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 0 67px;
-    padding: 0 0 15px 80px;
+    margin: 0 0 70px;
+    padding: 0 60px 15px 80px;
   }
 }
 
 .form__fieldset:nth-child(2) legend {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     text-align: start;
     padding-left: 26px;
@@ -102,10 +116,13 @@
 
 
   @media (min-width: @mobile-width-only) {
-    width: 960px;
     margin: auto;
     grid-column: 1 / -1;
     border-top: 1px solid #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
   }
 }
 
@@ -168,7 +185,7 @@
 .form__fieldset textarea {
   resize: none;
   display: block;
-  padding: 16px;
+  padding: 14px;
   box-sizing: border-box;
   width: 100%;
   max-width: 768px;

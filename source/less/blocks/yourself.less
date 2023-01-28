@@ -7,15 +7,22 @@
 
 .yourself__item {
   text-align: start;
-  margin-bottom: 12px;
-  max-width: 480px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 21px 58px;
+  grid-template-areas:
+        "text"
+        "input";
 }
 
-.yourself__item:last-child {
-  margin: 0;
+.yourself__item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .yourself__text {
+  display: flex;
+  align-items: center;
+  grid-area: text;
   color: #333333;
   padding-left: 16px;
   margin: 0;
@@ -25,12 +32,13 @@
 }
 
 .yourself__item input {
+  grid-area: input;
   display: block;
   font-family: inherit;
   font-weight: 700;
-  padding: 16px;
+  padding: 11px;
+  padding-top: 16px;
   box-sizing: border-box;
-  border: none;
   background-color: #f2f2f2;
   width: 100%;
   font-size: 18px;
