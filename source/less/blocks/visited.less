@@ -1,3 +1,15 @@
+.visited {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    margin: auto;
+    margin-bottom: 78px;
+  }
+}
+
 .visited-attractions {
   list-style-type: none;
   margin: 0;
@@ -10,23 +22,34 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 224px 224px;
-    row-gap: 16px;
     column-gap: 32px;
-    padding: 0 84px 32px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 84px 78px;
+    width: 871px;
+    padding: 0 44.5px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 61px;
   }
 }
 
 .visited-attractions__item {
+  text-transform: none;
   display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 280px;
+  margin-bottom: 16px;
 
-  @media (max-width: @mobile-width-only) {
-    margin-bottom: 17px;
+  @media (min-width: @tablet-width) {
+    width: 224px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 172px;
+    margin: 0;
   }
 }
 
@@ -34,14 +57,16 @@
   @media (max-width: @mobile-width-only) {
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -10px;
+  }
 }
 
 .visited-attractions__item label {
-  text-transform: none;
-  display: block;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  @media (min-width: @desktop-width) {
+    width: 130px;
+  }
 }
 
 .visited-attractions-checkbox-text {
@@ -87,7 +112,14 @@
   background-image: url(../img/tick.svg);
 }
 
+.visited-attractions-checkbox-text--control:active + .visited-attractions-checkbox-text::after {
+  opacity: 30%;
+}
 
-.visited-attractions-checkbox:checked + .visited-attractions-checkbox-text::after {
+.visited-attractions-checkbox-text--control:active + .visited-attractions-checkbox-text::before {
+  background-color: #d5d5d5;
+}
+
+input[type=checkbox]:checked + .visited-attractions-checkbox-text::after {
   display: block;
 }

@@ -1,3 +1,9 @@
+.impression {
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}
+
 .impression-form {
   list-style-type: none;
   padding: 0;
@@ -7,13 +13,16 @@
     display: grid;
     grid-template-columns: 280px 280px;
     row-gap: 16px;
-    padding: 0 36px 38px;
+    column-gap: 15px;
+    padding: 0 24px 38px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: auto;
     display: flex;
-    padding: 0 53px 65px;
-    column-gap: 64px;
+    flex-wrap: wrap;
+    padding: 4px 0 65px 53px;
+    column-gap: 28px;
   }
 }
 
@@ -24,15 +33,10 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
+  width: 280px;
 
   @media (max-width: @mobile-width-only) {
     margin-bottom: 17px;
-  }
-}
-
-.impression-form__item:first-child {
-  @media (min-width: @desktop-width) {
-    margin-left: 48px;
   }
 }
 
@@ -65,6 +69,18 @@
   left: 15px;
   border-radius: 50%;
   background-color: #333333;
+}
+
+.impression-form-radio-input:active + .impression-form-radio-input::after {
+  opacity: 30%;
+}
+
+.impression-form-radio-input:active + .impression-form-radio-input::before {
+  background-color: #d5d5d5;
+}
+
+.impression-form-radio-input:hover + .impression-form-radio-input::before {
+  background-color: #e5e5e5;
 }
 
 .impression-form-radio:checked + .impression-form-radio-input::after {
