@@ -32,7 +32,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 50px;
+    margin: 0 0 51px;
+    padding: 0 53px 14px 0;
+    border-right: 1px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,6 +44,10 @@
 }
 
 .form__fieldset:nth-child(1) legend {
+  @media (min-width: @tablet-width) {
+    padding-left: 36px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-left: 70px;
   }
@@ -53,10 +59,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 30px;
-    padding-bottom: 15px;
-    border-left: 1px solid #dbdbdb;
-    margin-bottom: 45px;
+    padding: 2px 0 0 33px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,10 +70,6 @@
 }
 
 .form__fieldset:nth-child(2) legend {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
-  }
-
   @media (min-width: @desktop-width) {
     text-align: start;
     padding-left: 26px;
@@ -115,8 +115,9 @@
   }
 
 
-  @media (min-width: @mobile-width-only) {
-    margin: auto;
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin-bottom: 20px;
     grid-column: 1 / -1;
     border-top: 1px solid #dbdbdb;
   }
