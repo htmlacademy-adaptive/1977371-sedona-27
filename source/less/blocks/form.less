@@ -6,7 +6,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 60px 48px;
+    padding: 0 60px 65px;
   }
 
   @media (min-width: @desktop-width) {
@@ -146,6 +146,8 @@
   }
 
   @media (min-width: @mobile-width-only) {
+    padding: 0;
+    margin: 0;
     grid-column: 1 / -1;
     border-top: 1px solid #dbdbdb;
   }
@@ -185,12 +187,12 @@
 .form__fieldset textarea {
   resize: none;
   display: block;
-  padding: 14px;
+  padding: 16px;
   box-sizing: border-box;
   width: 100%;
   max-width: 768px;
   margin: 0 auto;
-  min-height: 150px;
+  min-height: 160px;
   border: none;
   font-family: inherit;
   font-weight: 700;
