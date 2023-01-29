@@ -23,6 +23,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     width: 871px;
     padding: 0 44.5px;
     display: flex;
@@ -106,7 +107,7 @@
   height: 16px;
   top: 15px;
   left: 12px;
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
 }
 
 .visited-attractions-checkbox-text--control:active + .visited-attractions-checkbox-text::after {
@@ -117,6 +118,6 @@
   background-color: #d5d5d5;
 }
 
-input[type=checkbox]:checked + .visited-attractions-checkbox-text::after {
+input[type="checkbox"]:checked + .visited-attractions-checkbox-text::after {
   display: block;
 }

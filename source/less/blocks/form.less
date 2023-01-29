@@ -1,4 +1,4 @@
-.form__wrapper {
+.form {
   @media (max-width: @mobile-width-only) {
     border-top: 1px solid #dbdbdb;
   }
@@ -32,14 +32,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 0 51px;
-    padding: 0 53px 14px 0;
+    margin: 0 12px 51px;
+    padding: 0 43px 14px 0;
     border-right: 1px solid #e5e5e5;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 50px 0 60px;
-    margin: 0 0 70px;
+    padding: 0 50px 20px 60px;
+    margin: 0 0 55px;
   }
 }
 
@@ -70,8 +70,11 @@
 }
 
 .form__fieldset:nth-child(2) legend {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
     padding-left: 26px;
   }
 }
@@ -87,8 +90,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-left: 50px;
     width: 960px;
-    margin: auto;
     grid-column: 1 / -1;
     border-top: 1px solid #dbdbdb;
   }
@@ -105,7 +108,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 }
 
@@ -124,6 +127,7 @@
 
   @media (min-width: @desktop-width) {
     width: 960px;
+    margin-bottom: 75px;
   }
 }
 
@@ -134,6 +138,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 24px;
+    padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -157,6 +162,10 @@
 .form__fieldset:nth-child(5) legend {
   @media (max-width: @mobile-width-only) {
     padding-bottom: 19px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
   }
 
   @media (min-width: @desktop-width) {
